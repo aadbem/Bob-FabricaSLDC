@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "bob-marketplace": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:39247/mcp",
+      "headers": {
+        "Bob-Marketplace-Token": "bob-marketplace-local"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "search_assets",
+        "get_asset",
+        "list_installed"
+      ]
+    },
+    "github": {
+      "command": "/usr/local/bin/npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      },
+      "disabled": false
+    }
+  }
+}
